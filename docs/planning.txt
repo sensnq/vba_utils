@@ -1,0 +1,17 @@
+Planning how things will/should work
+Class for pandas functionality (need a name)
+	To initialize in VBA, it has to be done like:
+		Obj = New ThisClass
+		Obj.Initialize(args, ...)
+	We can implement multiple ways of initializing, like:
+		Class.InitFromXL:	Load from excel file (by name)
+		Class.InitFromCSV:	Load from csv (by name)
+		Class.InitFromSheet:	Load from a sheet object
+	You should be able to output an instance to the same formats
+	An instance can have two main parts, header and data
+		Header
+			At the most basic, access header with array index
+			May be able to do dict-like access as well
+		Data
+			Access by row/col index
+			Access by col string/row string
